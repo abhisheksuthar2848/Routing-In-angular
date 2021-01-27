@@ -6,7 +6,10 @@
     </h1>
     <ul>
         <li *ngFor="let product of products">
-            {{product.name}}
+            <a routerlink="/product/{{product.id}}">
+
+                {{product.name}}
+            </a>
         </li>
     </ul>
 </div>
